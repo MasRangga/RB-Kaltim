@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
-import { NavLink, Link } from "react-router-dom"
-
-
+import { NavLink, Link } from "react-router-dom";
+import Logo_RB from "../assets/Logo_RB.svg";
+import IconRB2 from "../assets/IconRB2.jpeg";
 import { FiMenu } from "react-icons/fi";
 import { RxCross2 } from "react-icons/rx";
 
 const Navbar = () => {
    const [openHamburger, setOpenHamburger] = useState(false);
    const [navbar, setNavbar] = useState(false);
+   const [hovered, setHovered] = useState(false);
 
    const handleHamburgerClick = (e) => {
       e.stopPropagation();
@@ -58,7 +59,11 @@ const Navbar = () => {
        <div className="flex justify-between items-center mx-4 mt-2">
          {/* logo */}
          <Link to={"/"} className="lg:hidden">
-           <img alt="logo_rb_kaltim" className="w-14 h-14 lg:w-20 lg:h-20" />
+           <img
+             src={Logo_RB}
+             alt="Logo_RB"
+             className="w-34 h-20 lg:w-26 lg:h-26"
+           />
          </Link>
          {/* Navmenu Mobile */}
          <div className="flex lg:hidden">
@@ -122,7 +127,9 @@ const Navbar = () => {
              ))}
              <div className="h-px bg-slate-700 my-2"></div>
              <div className="border-none px-4 py-2 bg-blue-700 rounded-2xl text-white">
-               <button>Daftar Sekarang</button>
+               <Link as={Link} to={""} className="block w-full h-full">
+                 <button className="w-full h-full">Dapatkan Aplikasi</button>
+               </Link>
              </div>
            </div>
          </div>
@@ -132,8 +139,9 @@ const Navbar = () => {
            <div className="hidden lg:flex lg:items-center lg:gap-14">
              <Link to={"/"} className="">
                <img
-                 alt="logo_rb_kaltim"
-                 className="w-14 h-14 lg:w-20 lg:h-20"
+                 src={Logo_RB}
+                 alt="Logo_RB"
+                 className="w-34 h-20 lg:w-26 lg:h-26"
                />
              </Link>
              {/* navmenu */}
@@ -187,8 +195,8 @@ const Navbar = () => {
              </div>
            </div>
 
-           {/* login dan coba gratis */}
-           <div className="hidden lg:flex items-center gap-7">
+           {/* Daftar sekarang */}
+           <div className="hidden lg:flex items-center gap-7 mr-9">
              <ul className="menu menu-horizontal px-1">
                <li>
                  <details>
@@ -196,30 +204,154 @@ const Navbar = () => {
                      Daftar Sekarang
                    </summary>
                    <ul className="p-2 bg-base-100 rounded-t-none">
-                     <Link as={Link} to={""}>
-                       <li>
-                         <a>RB Balikpapan</a>
-                       </li>
+                     <Link
+                       as={Link}
+                       to={""}
+                       className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
+                       onMouseEnter={() => setHovered(true)}
+                       onMouseLeave={() => setHovered(false)}
+                     >
+                       <div
+                         className={`avatar ring-primary ring-offset-base-100 w-8 h-8 rounded-full ring ring-offset-2 overflow-hidden flex items-center justify-center bg-white ${
+                           hovered ? "scale-105" : ""
+                         }`}
+                       >
+                         <img
+                           className="object-cover w-full h-full"
+                           src={IconRB2}
+                           alt="IconRB"
+                         />
+                       </div>
+                       <div className="flex flex-col">
+                         <p
+                           className={`mb-0.5 text-sm font-semibold ${
+                             hovered ? "text-blue-600" : "text-gray-800"
+                           }`}
+                         >
+                           RB Balikpapan
+                         </p>
+                         <p className={`text-xs text-gray-600`}>instagram</p>
+                       </div>
                      </Link>
-                     <Link as={Link} to={""}>
-                       <li>
-                         <a>RB Samarinda</a>
-                       </li>
+
+                     <Link
+                       as={Link}
+                       to={""}
+                       className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
+                       onMouseEnter={() => setHovered(true)}
+                       onMouseLeave={() => setHovered(false)}
+                     >
+                       <div
+                         className={`avatar ring-primary ring-offset-base-100 w-8 h-8 rounded-full ring ring-offset-2 overflow-hidden flex items-center justify-center bg-white ${
+                           hovered ? "scale-105" : ""
+                         }`}
+                       >
+                         <img
+                           className="object-cover w-full h-full"
+                           src={IconRB2}
+                           alt="IconRB"
+                         />
+                       </div>
+                       <div className="flex flex-col">
+                         <p
+                           className={`mb-0.5 text-sm font-semibold ${
+                             hovered ? "text-blue-600" : "text-gray-800"
+                           }`}
+                         >
+                           RB Samarinda
+                         </p>
+                         <p className={`text-xs text-gray-600`}>instagram</p>
+                       </div>
                      </Link>
-                     <Link as={Link} to={""}>
-                       <li>
-                         <a>RB Berau</a>
-                       </li>
+
+                     <Link
+                       as={Link}
+                       to={""}
+                       className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
+                       onMouseEnter={() => setHovered(true)}
+                       onMouseLeave={() => setHovered(false)}
+                     >
+                       <div
+                         className={`avatar ring-primary ring-offset-base-100 w-8 h-8 rounded-full ring ring-offset-2 overflow-hidden flex items-center justify-center bg-white ${
+                           hovered ? "scale-105" : ""
+                         }`}
+                       >
+                         <img
+                           className="object-cover w-full h-full"
+                           src={IconRB2}
+                           alt="IconRB"
+                         />
+                       </div>
+                       <div className="flex flex-col">
+                         <p
+                           className={`mb-0.5 text-sm font-semibold ${
+                             hovered ? "text-blue-600" : "text-gray-800"
+                           }`}
+                         >
+                           RB Berau
+                         </p>
+                         <p className={`text-xs text-gray-600`}>instagram</p>
+                       </div>
                      </Link>
-                     <Link as={Link} to={""}>
-                       <li>
-                         <a>RB Penajam Paser Utara</a>
-                       </li>
+
+                     <Link
+                       as={Link}
+                       to={""}
+                       className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
+                       onMouseEnter={() => setHovered(true)}
+                       onMouseLeave={() => setHovered(false)}
+                     >
+                       <div
+                         className={`avatar ring-primary ring-offset-base-100 w-8 h-8 rounded-full ring ring-offset-2 overflow-hidden flex items-center justify-center bg-white ${
+                           hovered ? "scale-105" : ""
+                         }`}
+                       >
+                         <img
+                           className="object-cover w-full h-full"
+                           src={IconRB2}
+                           alt="IconRB"
+                         />
+                       </div>
+                       <div className="flex flex-col">
+                         <p
+                           className={`mb-0.5 text-sm font-semibold ${
+                             hovered ? "text-blue-600" : "text-gray-800"
+                           }`}
+                         >
+                           RB Penajam Paser Utara
+                         </p>
+                         <p className={`text-xs text-gray-600`}>instagram</p>
+                       </div>
                      </Link>
-                     <Link as={Link} to={""}>
-                       <li>
-                         <a>RB Kutai Kartanegara</a>
-                       </li>
+
+                     <Link
+                       as={Link}
+                       to={""}
+                       className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
+                       onMouseEnter={() => setHovered(true)}
+                       onMouseLeave={() => setHovered(false)}
+                     >
+                       <div
+                         className={`avatar ring-primary ring-offset-base-100 w-8 h-8 rounded-full ring ring-offset-2 overflow-hidden flex items-center justify-center bg-white ${
+                           hovered ? "scale-105" : ""
+                         }`}
+                       >
+                         <img
+                           className="object-cover w-full h-full"
+                           src={IconRB2}
+                           alt="IconRB"
+                         />
+                       </div>
+                       <div className="flex flex-col">
+                         <p
+                           className={`mb-0.5 text-sm font-semibold ${
+                             hovered ? "text-blue-600" : "text-gray-800"
+                           }`}
+                         >
+                           RB Kutai Kartanegara
+                         </p>
+                         <p className={`text-xs text-gray-600`}>instagram</p>
+                       </div>
                      </Link>
                    </ul>
                  </details>
