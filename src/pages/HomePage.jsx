@@ -17,24 +17,24 @@ import Footer from "../components/Footer";
 
 const HomePage = () => {
 
-   // const keunggulan = [
-   //    {
-   //       icon: <BsFillCheckCircleFill className="text-green-400 bg-black w-6 h-6 border-2 border-green-900 rounded-full" />,
-   //       title: "Optimalkan lebih dari 80% kapasitas HR untuk administrasi dan operasional."
-   //    },
-   //    {
-   //       icon: <BsFillCheckCircleFill className="text-green-400 bg-black w-6 h-6 border-2 border-green-900 rounded-full" />,
-   //       title: "Monitoring progress onboarding dengan Lebih Teliti dan Efektif."
-   //    },
-   //    {
-   //       icon: <BsFillCheckCircleFill className="text-green-400 bg-black w-6 h-6 border-2 border-green-900 rounded-full" />,
-   //       title: "Rancang alur kerja yang transparan dan terstruktur."
-   //    },
-   //    {
-   //       icon: <BsFillCheckCircleFill className="text-green-400 bg-black w-6 h-6 border-2 border-green-900 rounded-full" />,
-   //       title: "Dokumentasikan komponen iffboarding dalam satu dashboard."
-   //    },
-   // ]
+   const keunggulan = [
+      {
+         icon: <BsFillCheckCircleFill className="text-green-400 bg-black w-6 h-6 border-2 border-green-900 rounded-full" />,
+         title: "Optimalkan lebih dari 80% kapasitas HR untuk administrasi dan operasional."
+      },
+      {
+         icon: <BsFillCheckCircleFill className="text-green-400 bg-black w-6 h-6 border-2 border-green-900 rounded-full" />,
+         title: "Monitoring progress onboarding dengan Lebih Teliti dan Efektif."
+      },
+      {
+         icon: <BsFillCheckCircleFill className="text-green-400 bg-black w-6 h-6 border-2 border-green-900 rounded-full" />,
+         title: "Rancang alur kerja yang transparan dan terstruktur."
+      },
+      {
+         icon: <BsFillCheckCircleFill className="text-green-400 bg-black w-6 h-6 border-2 border-green-900 rounded-full" />,
+         title: "Dokumentasikan komponen iffboarding dalam satu dashboard."
+      },
+   ]
 
    // AOS (Animate On Scroll)
    useEffect(() => {
@@ -55,7 +55,7 @@ const HomePage = () => {
 
    return (
       <div>
-       
+      <Navbar/>
          <div className="pt-[73px] container mx-auto" ref={linkRef}>
             {/* Mainsaction */}
             <div className="relative pt-4 bg-gradient-to-r from-blue-300 shadow-2xl mb-10 md:pt-6 lg:pt-4">
@@ -66,7 +66,7 @@ const HomePage = () => {
                   {/* Pargraf dan tombol*/}
                   <div className="flex flex-col gap-5 mt-6 lg:w-1/2">
                      {/* heading */}
-                     {/* <div className="flex flex-col gap-4 lg:mb-5">
+                     <div className="flex flex-col gap-4 lg:mb-5">
                         <q className="text-blue-900 text-xl font-bold text-center lg:text-5xl lg:mt-8 lg:mb-5 lg:text-start lg:leading-snug lg:font-semibold">
                            Selamat Datang Di Rumah BUMN Kalimantan Timur
                         </q>
@@ -78,7 +78,7 @@ const HomePage = () => {
                               </div>
                            </div>
                         ))}
-                     </div> */}
+                     </div>
                      {/* dua button hub sales dan coba gratis */}
                      {/* <div className="flex gap-4 pb-5 lg:mb-36">
                         <button className="border-2 rounded-3xl py-2 px-4 border-primary bg-white hover:bg-primary group duration-300 lg:py-3 lg:px-6">
