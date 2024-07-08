@@ -35,6 +35,10 @@ const Navbar = () => {
      {
        name: "Inspirasi Karir",
        link: "",
+     },
+     {
+       name: "Berita",
+       link: "",
      }
    ];
 
