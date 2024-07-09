@@ -78,7 +78,7 @@ const Navbar = () => {
                  <details>
                    <summary className="text-lg">Katalog</summary>
                    <ul className="p-2 bg-base-100 rounded-t-none">
-                     <Link as={Link} to={""}>
+                     <Link as={Link} to={"/balikpapankatalog"}>
                        <li>
                          <a>Balikpapan</a>
                        </li>
@@ -167,7 +167,7 @@ const Navbar = () => {
                    <details>
                      <summary className="text-lg">Katalog</summary>
                      <ul className="p-2 bg-base-100 rounded-t-none">
-                       <Link as={Link} to={""}>
+                       <Link as={Link} to={"/balikpapankatalog"}>
                          <li>
                            <a>Balikpapan</a>
                          </li>
