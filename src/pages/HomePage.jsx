@@ -5,6 +5,8 @@ import { ImWhatsapp } from "react-icons/im";
 import { FaAngleRight } from "react-icons/fa";
 import Wave from 'react-wavify';
 import { useState } from "react";
+import FAQItem from "../components/FAQItem";
+import HeroDua from "../assets/HeroDua.png";
 
 import GoDigital from "../assets/GoDigital.svg";
 import GoGlobal from "../assets/GoGlobal.svg";
@@ -14,6 +16,7 @@ import GoOnline from "../assets/GoOnline.svg";
 
 import HeroSatu from "../assets/HeroSatu.png";
 
+import berita1 from "../assets/berita1.png";
 
 import Mandiri from "../assets/Mandiri.png";
 import Telkom from "../assets/Telkom.png";
@@ -26,9 +29,46 @@ import { useEffect, useRef } from "react";
 import Footer from "../components/Footer";
 
 const HomePage = () => {
+  const faqItems = [
+    {
+      question: "Apa itu Aplikasi Rumah BUMN dan apa tujuannya?",
+      answer:
+        "Aplikasi Rumah BUMN adalah platform digital yang dikembangkan untuk mendukung dan mempromosikan produk-produk UMKM (Usaha Mikro, Kecil, dan Menengah) di Indonesia. Tujuannya adalah untuk membantu UMKM meningkatkan visibilitas, akses pasar, dan penjualan produk mereka melalui jaringan BUMN yang ada di seluruh Indonesia. Aplikasi ini memungkinkan UMKM untuk memasarkan produk mereka secara online dan menjangkau lebih banyak pelanggan.",
+      id: 1,
+    },
+    {
+      question: "Bagaimana cara melakukan Pemesanan?",
+      answer:
+        "Untuk melakukan pemesanan pada menu katalog, Anda akan diarahkan menuju WhatsApp Rumah BUMN Kalimantan Timur yang tersedia di setiap kota. Dengan demikian, Anda dapat dengan mudah memesan produk atau layanan yang diinginkan sesuai dengan lokasi terdekat Anda.",
+      id: 2,
+    },
+    {
+      question: "Metode pembayaran apa saja yang tersedia?",
+      answer:
+        "Pembayaran dapat dilakukan menggunakan uang tunai (cash) atau melalui transfer bank. Selain itu, untuk mempermudah akses dan pelayanan, Rumah BUMN Kalimantan Timur telah hadir di 5 kota yaitu Balikpapan,Samarinda,Kutai Kartanegara,Berau dan Penajam Paser Utara, setiap kota ini dengan siap melayani kebutuhan masyarakat dengan berbagai fasilitas dan program unggulan.",
+      id: 3,
+    },
+    {
+      question: "Apakah saya perlu membuat akun untuk melakukan pemesanan?",
+      answer:
+        "Tidak perlu, untuk melakukan pemesanan pada menu katalog, Anda akan diarahkan menuju WhatsApp Rumah BUMN Kalimantan Timur yang tersedia di setiap kota. Dengan demikian, Anda dapat dengan mudah memesan produk atau layanan yang diinginkan tanpa harus membuat akun terlebih dahulu.",
+      id: 4,
+    },
+    {
+      question: "Bagaimana Cara Bergabung dengan Aplikasi Rumah BUMN?",
+      answer:
+        "Untuk bergabung dengan aplikasi Rumah BUMN maka anda cukup mendaftar melalui link goggle form yang tersedia di Bio Instagram masing-masing Instagram Rumah BUMN Kalimantan Timur",
+      id: 5,
+    },
+    {
+      question: "Manfaat bergabung Rumah BUMN",
+      answer:
+        "Aplikasi Rumah BUMN memberikan berbagai keuntungan bagi UMKM, termasuk akses ke program pelatihan, jaringan bisnis luas, platform promosi, layanan konsultasi bisnis, pembiayaan yang mudah, integrasi dengan WhatsApp untuk transaksi, dan informasi terkini tentang kebijakan dan pasar. Ini mendorong kolaborasi dan inovasi produk serta layanan UMKM, menjadikannya alat yang sangat bermanfaat untuk pengembangan usaha.",
+      id: 6,
+    },
+  ];
    
    
-
    // AOS (Animate On Scroll)
    useEffect(() => {
       AOS.init({
@@ -56,8 +96,8 @@ const HomePage = () => {
            <div className="mx-4 pb-36 md:flex md:flex-col md:justify-center md:items-center lg:pb-0 lg:flex lg:flex-row-reverse lg:gap-4 lg:mt-2">
              {/* gambar */}
              <img
-               src={HeroSection}
-               alt="HeroSection"
+               src={HeroDua}
+               alt="HeroDua"
                className="h-96 md:w-1/2 lg:mt-8 lg:h-auto"
              />
              {/* Pargraf dan tombol*/}
@@ -243,7 +283,7 @@ const HomePage = () => {
                <img
                  src={HeroSatu}
                  alt="Gambar Hero"
-                 className="lg:max-xl:w-1/2"
+                 className="lg:max-xl:w-1/2 lg:mb-30"
                  data-aos="fade-zoom-in"
                  data-aos-easing="ease-in-back"
                  data-aos-offset="320"
@@ -252,7 +292,12 @@ const HomePage = () => {
                <div className="flex flex-col gap-4 xl:mr-20">
                  {/* Modern */}
 
-                 <div className="flex flex-col gap-y-2 mt-16">
+                 <div
+                   className="flex flex-col gap-y-2 mt-16"
+                   data-aos="fade-down"
+                   data-aos-easing="ease-in-out"
+                   data-aos-duration="1000"
+                 >
                    <h1 className="text-blue-900 font-bold text-2xl lg:text-4xl">
                      Tahap Pembinaan UMKM di Rumah BUMN Kalimantan Timur
                    </h1>
@@ -275,37 +320,20 @@ const HomePage = () => {
                      alt="GoModern"
                      className="border-2 rounded-full p-2 shadow-md bg-white w-24 h-24"
                    />
-                   <div className="flex flex-col gap-2 mt-4">
+                   <div className="flex flex-col mt-1">
                      <h1 className="text-lg font-semibold text-blue-950 lg:text-xl lg:font-bold">
                        Go Modern
                      </h1>
                      <p className="text-sm font-light lg:font-normal lg:text-base">
+                       Jumlah UMKM Terdaftar
+                       <span className="text-lg font-semibold text-blue-950 lg:text-xl lg:font-bold">
+                         {" "}
+                         5957
+                       </span>
+                     </p>
+                     <p className="text-sm font-light lg:font-normal lg:text-base">
                        UMKM yang telah terdaftar di website Rumah BUMN
                        Kalimantan Timur
-                     </p>
-                   </div>
-                 </div>
-
-                 {/* Online */}
-                 <div
-                   className="flex gap-4 lg:gap-6"
-                   data-aos="fade-left"
-                   data-aos-anchor="#example-anchor"
-                   data-aos-offset="1200"
-                   data-aos-duration="900"
-                   data-aos-delay="500"
-                 >
-                   <img
-                     src={GoOnline}
-                     alt="GoOnline"
-                     className="border-2 rounded-full p-2 shadow-md bg-white w-24 h-24"
-                   />
-                   <div className="flex flex-col gap-2 mt-4">
-                     <h1 className="text-lg font-semibold text-blue-950 lg:text-xl lg:font-bold">
-                       Go Online
-                     </h1>
-                     <p className="text-sm font-light lg:font-normal lg:text-base">
-                       UMKM yang telah mendapatkan transaksi nasional
                      </p>
                    </div>
                  </div>
@@ -324,12 +352,50 @@ const HomePage = () => {
                      alt="GoDigital"
                      className="border-2 rounded-full p-2 shadow-md bg-white w-24 h-24"
                    />
-                   <div className="flex flex-col gap-2 mt-4">
+                   <div className="flex flex-col mt-1">
                      <h1 className="text-lg font-semibold text-blue-950 lg:text-xl lg:font-bold">
                        Go Digital
                      </h1>
                      <p className="text-sm font-light lg:font-normal lg:text-base">
+                       Jumlah UMKM Terdaftar
+                       <span className="text-lg font-semibold text-blue-950 lg:text-xl lg:font-bold">
+                         {" "}
+                         4255
+                       </span>
+                     </p>
+                     <p className="text-sm font-light lg:font-normal lg:text-base">
                        UMKM yang telah terdaftar di media sosial
+                     </p>
+                   </div>
+                 </div>
+
+                 {/* Online */}
+                 <div
+                   className="flex gap-4 lg:gap-6"
+                   data-aos="fade-left"
+                   data-aos-anchor="#example-anchor"
+                   data-aos-offset="1200"
+                   data-aos-duration="900"
+                   data-aos-delay="500"
+                 >
+                   <img
+                     src={GoOnline}
+                     alt="GoOnline"
+                     className="border-2 rounded-full p-2 shadow-md bg-white w-24 h-24"
+                   />
+                   <div className="flex flex-col mt-1">
+                     <h1 className="text-lg font-semibold text-blue-950 lg:text-xl lg:font-bold">
+                       Go Online
+                     </h1>
+                     <p className="text-sm font-light lg:font-normal lg:text-base">
+                       Jumlah UMKM Terdaftar
+                       <span className="text-lg font-semibold text-blue-950 lg:text-xl lg:font-bold">
+                         {" "}
+                         670
+                       </span>
+                     </p>
+                     <p className="text-sm font-light lg:font-normal lg:text-base">
+                       UMKM yang telah mendapatkan transaksi nasional
                      </p>
                    </div>
                  </div>
@@ -348,10 +414,17 @@ const HomePage = () => {
                      alt="GoGlobal"
                      className="border-2 rounded-full p-2 shadow-md bg-white w-24 h-24"
                    />
-                   <div className="flex flex-col gap-2 mt-4">
+                   <div className="flex flex-col mt-1">
                      <h1 className="text-lg font-semibold text-blue-950 lg:text-xl lg:font-bold">
                        Go Global
                      </h1>
+                     <p className="text-sm font-light lg:font-normal lg:text-base">
+                       Jumlah UMKM Terdaftar
+                       <span className="text-lg font-semibold text-blue-950 lg:text-xl lg:font-bold">
+                         {" "}
+                         18
+                       </span>
+                     </p>
                      <p className="text-sm font-light lg:font-normal lg:text-base">
                        UMKM yang telah mendapatkan transaksi secara nasional
                      </p>
@@ -360,17 +433,119 @@ const HomePage = () => {
                </div>
              </div>
            </div>
+
            {/*berita */}
-          
+           <section className="showcases mx-auto py-12">
+             <div className="flex flex-col gap-y-8">
+               <div
+                 className="flex flex-col gap-3 text-center"
+                 data-aos="fade-down"
+                 data-aos-easing="ease-in-out"
+                 data-aos-duration="1000"
+               >
+                 <h1 className="text-blue-900 font-bold text-2xl lg:text-4xl">
+                   Berita Terbaru
+                 </h1>
+                 <p className="text-base font-light text-slate-700 lg:text-lg">
+                   Berita Terbaru di Rumah BUMN Kalimantan Timur
+                 </p>
+               </div>
+               {/* Konten */}
+               <div className="flex flex-wrap justify-center gap-6">
+                 <div className="group relative w-[320px] h-[220px]">
+                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                     <a
+                       href="#"
+                       className="bg-primary text-white font-semibold px-7 py-3 rounded-full shadow-lg hover:bg-primary-dark transition-colors duration-300"
+                     >
+                       Lihat Detail
+                     </a>
+                   </div>
+                   <img
+                     src={berita1}
+                     alt="berita1"
+                     className="w-full h-full object-cover rounded-2xl border-2 border-transparent group-hover:border-secondary transition-all duration-500"
+                   />
+                 </div>
+
+                 <div className="group relative w-[320px] h-[220px]">
+                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                     <a
+                       href="#"
+                       className="bg-primary text-white font-semibold px-7 py-3 rounded-full shadow-lg hover:bg-primary-dark transition-colors duration-300"
+                     >
+                       Lihat Detail
+                     </a>
+                   </div>
+                   <img
+                     src={berita1}
+                     alt="berita1"
+                     className="w-full h-full object-cover rounded-2xl border-2 border-transparent group-hover:border-secondary transition-all duration-500"
+                   />
+                 </div>
+                 <div className="group relative w-[320px] h-[220px]">
+                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                     <a
+                       href="#"
+                       className="bg-primary text-white font-semibold px-7 py-3 rounded-full shadow-lg hover:bg-primary-dark transition-colors duration-300"
+                     >
+                       Lihat Detail
+                     </a>
+                   </div>
+                   <img
+                     src={berita1}
+                     alt="berita1"
+                     className="w-full h-full object-cover rounded-2xl border-2 border-transparent group-hover:border-secondary transition-all duration-500"
+                   />
+                 </div>
+                 <div className="group relative w-[320px] h-[220px]">
+                   <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                     <a
+                       href="#"
+                       className="bg-primary text-white font-semibold px-7 py-3 rounded-full shadow-lg hover:bg-primary-dark transition-colors duration-300"
+                     >
+                       Lihat Detail
+                     </a>
+                   </div>
+                   <img
+                     src={berita1}
+                     alt="berita1"
+                     className="w-full h-full object-cover rounded-2xl border-2 border-transparent group-hover:border-secondary transition-all duration-500"
+                   />
+                 </div>
+               </div>
+             </div>
+           </section>
            {/* End Berita */}
          </div>
 
          {/* FAQ */}
-         
+         <div
+           id="faq"
+           className="container mx-auto px-4 my-8"
+           data-aos="fade-down"
+           data-aos-easing="ease-in-out"
+           data-aos-duration="1000"
+         >
+           <h2 className="text-blue-900 font-bold text-2xl lg:text-4xl">
+             Frequently Asked Questions
+           </h2>
+           <div className="grid grid-cols-1 lg:grid-cols-2 mt-6 gap-6 items-start">
+             {faqItems.map((item) => (
+               <FAQItem
+                 key={item.id}
+                 question={item.question}
+                 answer={item.answer}
+                 id={item.id}
+               />
+             ))}
+           </div>
+         </div>
+
          {/* End FAQ */}
 
          {/* CTA */}
-         
+
          {/* End CTA */}
          <Footer />
        </div>
