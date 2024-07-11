@@ -2,23 +2,23 @@ import React from 'react'
 import Navbar from '../../components/Navbar';
 
 import Produk1 from "../../assets/Balikpapan/Produk1.jpg";
-import KembangGoyang from "../../assets/Balikpapan/KembangGoyang.jpg";
-import Pikkong from "../../assets/Balikpapan/Pikkong.jpg";
+import KembangGoyang1 from "../../assets/Balikpapan/KembangGoyang1.jpg";
+import Pikkong1 from "../../assets/Balikpapan/Pikkong1.jpg";
 import KripikPare from "../../assets/Balikpapan/KripikPare.jpg";
-import IniBrownies from "../../assets/Balikpapan/IniBrownies.jpg";
-import JaheKoe from "../../assets/Balikpapan/JaheKoe.jpg";
-import KusmaSnack from "../../assets/Balikpapan/KusmaSnack.jpeg";
+import IniBrownies1 from "../../assets/Balikpapan/IniBrownies1.jpg";
+import JaheKoe1 from "../../assets/Balikpapan/JaheKoe1.jpg";
+import KusmaSnack1 from "../../assets/Balikpapan/KusmaSnack1.jpeg";
 import Kriwang from "../../assets/Balikpapan/Kriwang.jpg";
 import ZahraCookies from "../../assets/Balikpapan/ZahraCookies.jpg";
-import Oshien from "../../assets/Balikpapan/Oshien.jpg";
-import Bananavi from "../../assets/Balikpapan/Bananavi.jpg";
-import StikNaga from "../../assets/Balikpapan/StikNaga.jpg";
-import Boolena from "../../assets/Balikpapan/Boolena.jpg";
+import Oshien1 from "../../assets/Balikpapan/Oshien1.jpg";
+import Bananavi1 from "../../assets/Balikpapan/Bananavi1.jpg";
+import StikNaga1 from "../../assets/Balikpapan/StikNaga1.jpg";
+import Boolena1 from "../../assets/Balikpapan/Boolena1.jpg";
 import Jamune from "../../assets/Balikpapan/Jamune.jpg";
-import CimiKeju from "../../assets/Balikpapan/CimiKeju.jpeg";
+import CimiKeju1 from "../../assets/Balikpapan/CimiKeju1.jpeg";
 import Chacaos from "../../assets/Balikpapan/Chacaos.jpeg";
 import Bagelan from "../../assets/Balikpapan/Bagelan.jpg";
-import BlackGartic from "../../assets/Balikpapan/BlackGartic.png";
+import BlackGartic1 from "../../assets/Balikpapan/BlackGartic1.png";
 
 
 import CopyRight from '../../components/CopyRight';
@@ -82,7 +82,7 @@ const Balikpapan = () => {
               {/* Gambar Produk */}
               <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
                 <img
-                  src={KembangGoyang}
+                  src={KembangGoyang1}
                   alt="produk1"
                   className="h-48 w-full object-cover rounded-xl"
                 />
@@ -115,7 +115,7 @@ const Balikpapan = () => {
               {/* Gambar Produk */}
               <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
                 <img
-                  src={Pikkong}
+                  src={Pikkong1}
                   alt="produk1"
                   className="h-48 w-full object-cover rounded-xl"
                 />
@@ -177,7 +177,7 @@ const Balikpapan = () => {
               {/* Gambar Produk */}
               <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
                 <img
-                  src={IniBrownies}
+                  src={IniBrownies1}
                   alt="produk1"
                   className="h-48 w-full object-cover rounded-xl"
                 />
@@ -208,7 +208,7 @@ const Balikpapan = () => {
               {/* Gambar Produk */}
               <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
                 <img
-                  src={JaheKoe}
+                  src={JaheKoe1}
                   alt="produk1"
                   className="h-48 w-full object-cover rounded-xl"
                 />
@@ -272,8 +272,8 @@ const Balikpapan = () => {
               {/* Gambar Produk */}
               <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
                 <img
-                  src={KusmaSnack}
-                  alt="KusmaSnack"
+                  src={KusmaSnack1}
+                  alt="KusmaSnack1"
                   className="h-48 w-full object-cover rounded-xl"
                 />
               </div>
@@ -282,7 +282,7 @@ const Balikpapan = () => {
                 <p className="font-light text-slate-500 text-base">
                   Kusuma Snack
                 </p>
-                <p className="font-light text-2xl text-gray-800">Kripik Pare</p>
+                <p className="font-light text-2xl text-gray-800">Kripik Pisang</p>
               </div>
               {/* Harga */}
               <div className="mt-3">
@@ -365,8 +365,8 @@ const Balikpapan = () => {
               {/* Gambar Produk */}
               <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
                 <img
-                  src={Oshien}
-                  alt="Oshien"
+                  src={Oshien1}
+                  alt="Oshien1"
                   className="h-48 w-full object-cover rounded-xl"
                 />
               </div>
@@ -429,8 +429,8 @@ const Balikpapan = () => {
               {/* Gambar Produk */}
               <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
                 <img
-                  src={Bananavi}
-                  alt="Bananavi"
+                  src={Bananavi1}
+                  alt="Bananavi1"
                   className="h-48 w-full object-cover rounded-xl"
                 />
               </div>
@@ -458,8 +458,8 @@ const Balikpapan = () => {
               {/* Gambar Produk */}
               <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
                 <img
-                  src={StikNaga}
-                  alt="StikNaga"
+                  src={StikNaga1}
+                  alt="StikNaga1"
                   className="h-48 w-full object-cover rounded-xl"
                 />
               </div>
@@ -468,7 +468,7 @@ const Balikpapan = () => {
                 <p className="font-light text-slate-500 text-base">
                   Yenny Chulaila
                 </p>
-                <p className="font-light text-2xl text-gray-800">Stik Naga</p>
+                <p className="font-light text-2xl text-gray-800">Stik Buah Naga</p>
               </div>
               {/* Harga */}
               <div className="mt-3">
@@ -505,7 +505,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. 30-35.000</p>
+                <p className="font-black text-xl">Rp. 35.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -522,8 +522,8 @@ const Balikpapan = () => {
               {/* Gambar Produk */}
               <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
                 <img
-                  src={CimiKeju}
-                  alt="CimiKeju"
+                  src={CimiKeju1}
+                  alt="CimiKeju1"
                   className="h-48 w-full object-cover rounded-xl"
                 />
               </div>
@@ -553,8 +553,8 @@ const Balikpapan = () => {
               {/* Gambar Produk */}
               <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
                 <img
-                  src={Boolena}
-                  alt="Boolena"
+                  src={Boolena1}
+                  alt="Boolena1"
                   className="h-48 w-full object-cover rounded-xl"
                 />
               </div>
@@ -648,8 +648,8 @@ const Balikpapan = () => {
               {/* Gambar Produk */}
               <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
                 <img
-                  src={BlackGartic}
-                  alt="BlackGartic"
+                  src={BlackGartic1}
+                  alt="BlackGartic1"
                   className="h-48 w-full object-cover rounded-xl"
                 />
               </div>
@@ -662,7 +662,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. 20-125.000</p>
+                <p className="font-black text-xl">Rp. 125.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
