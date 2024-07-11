@@ -8,6 +8,8 @@ import RachmatWahid from "../assets/RachmatWahid.png";
 import RachmatWahid2 from "../assets/RachmatWahid2.png";
 import BgCard from "../assets/BgCard.jpg"
 import BgCard2 from "../assets/BgCard2.jpg";
+import Instagram from "../assets/Instagram.svg";
+import LinkedIn from "../assets/LinkedIn.svg";
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -161,11 +163,37 @@ const TentangPage = () => {
              </h1>
            </div>
            {/* Body Card */}
-           <div className="min-h-[120px] md:min-h-[160px] py-3 px-4 bg-white rounded-b relative z-10 shadow text-gray-600">
+           <div className="min-h-[120px] md:min-h-[100px] py-3 px-4 bg-white rounded-b relative z-10 shadow text-gray-600">
              <div className="font-semibold mb-1">
                <p>Chief Executive Officer</p>
-               <p>Email: </p>
              </div>
+             <div className="flex flex-wrap justify-start gap-5 md:gap-5 py-3">
+               <a
+                 href="https://www.instagram.com/hit.sijabat/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="transition transform hover:scale-110 hover:shadow-lg"
+               >
+                 <img
+                   src={Instagram}
+                   alt="Instagram"
+                   className="w-6 h-6 md:w-6 md:h-6"
+                 />
+               </a>
+               <a
+                 href="https://www.linkedin.com/in/hitler-sijabat-abb56750/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="transition transform hover:scale-110 hover:shadow-lg"
+               >
+                 <img
+                   src={LinkedIn}
+                   alt="LinkedIn"
+                   className="w-6 h-6 md:w-6 md:h-6"
+                 />
+               </a>
+             </div>
+
              <p className="text-sm text-gray-500">
                Hitler Sijabat menjabat sebagai CEO Rumah BUMN Kalimantan
                Timur...
@@ -180,6 +208,96 @@ const TentangPage = () => {
              </p>
            </div>
          </div>
+
+         {/* ModalCEO */}
+         <dialog id="my_modal_1" className="modal">
+           <div className="modal-box bg-white rounded-lg shadow-lg p-6 max-w-3xl mx-auto">
+             <div className="flex flex-col md:flex-row items-start space-x-0 md:space-x-4">
+               <div className="w-48 h-48 md:w-56 md:h-56 rounded-full overflow-hidden border-2 border-gray-300 flex-shrink-0 mx-auto md:mx-0">
+                 <img
+                   src={HitlerSijabat2}
+                   alt="HitlerSijabat2"
+                   className="object-cover w-full rounded-full"
+                   style={{ objectPosition: "center center" }}
+                 />
+               </div>
+
+               <div className="flex-1 mt-4 md:mt-0 text-left">
+                 <h4 className="font-bold text-xl text-gray-900">
+                   Hitler Sijabat
+                 </h4>
+                 <p className="text-gray-600">Chief Executive Officer (CEO)</p>
+                 <p>
+                   Email Pribadi:{" "}
+                   <a
+                     href="mailto:hit.sijabat@gmail.com"
+                     className="text-blue-500"
+                   >
+                     hit.sijabat@gmail.com
+                   </a>
+                 </p>
+                 <p>
+                   Email:{" "}
+                   <a
+                     href="mailto:hitler.sijabat@pertamina.com"
+                     className="text-blue-500"
+                   >
+                     hitler.sijabat@pertamina.com
+                   </a>
+                 </p>
+                 <p className="py-4 text-gray-700">
+                   Hitler Sijabat menjabat sebagai CEO Rumah BUMN Kalimantan
+                   Timur berdasarkan Surat Kementrian Badan Usaha Milik Negara
+                   Nomor: S-152/DSI.MBU/11/2023, tanggal 28 November 2023
+                   tentang Penugasan CEO dan CFO Muda Rumah BUMN Batch-2 dan
+                   Surat Perintah Pertamina (Persero) Nomor:
+                   No.Prin-051/K00000/2023-S8 tanggal 21 Desember 2023 tentang
+                   Penugasan Pekerja Sebagai CEO dan CFO Muda Rumah BUMN.
+                 </p>
+                 <p className="text-gray-700">
+                   Hitler Sijabat lulus dari Jurusan Teknik Geologi di
+                   Universitas Padjadjaran (2011) dan melanjutkan pendidikan
+                   Magister Petroleum Geoscience di Institut Teknologi Bandung
+                   (2021). Karir Hitler Sijabat antara lain:
+                 </p>
+                 <ul className="list-disc pl-6 text-gray-700">
+                   <li className="text-gray-700">
+                     MLWD Field Engineer di Schlumberger Indonesia (2012-2013)
+                   </li>
+                   <li className="text-gray-700">
+                     Regional Exploration Geoscientist di Pertamina EP
+                     (2013-2014)
+                   </li>
+                   <li className="text-gray-700">
+                     Appraisal Geoscientist di Pertamina EP (2015-2017)
+                   </li>
+                   <li className="text-gray-700">
+                     Development Geoscientist di Pertamina EP (2017-2020)
+                   </li>
+                   <li className="text-gray-700">
+                     Exploration Geoscientist di Pertamina Hulu Rokan
+                     (2020-2021)
+                   </li>
+                   <li className="text-gray-700">
+                     New Venture Exploration Geoscientist di Pertamina Hulu
+                     Energi (2022-2024)
+                   </li>
+                 </ul>
+               </div>
+             </div>
+             <div className="modal-action mt-4 text-center">
+               <form method="dialog">
+                 <button
+                   className="btn bg-primary hover:bg-blue-800 text-white font-bold py-2 px-4 rounded block mx-auto w-full"
+                   onClick={() => document.getElementById("my_modal_1").close()}
+                 >
+                   Close
+                 </button>
+               </form>
+             </div>
+           </div>
+         </dialog>
+         {/* EndModalCEO */}
 
          {/* Card CFO */}
          <div className="mx-4 md:mx-10 mt-40 md:mt-40 flex-shrink-0 w-full md:w-[400px] group cursor-pointer active:opacity-70 transition-opacity duration-300">
@@ -199,10 +317,35 @@ const TentangPage = () => {
              </h1>
            </div>
            {/* Body Card */}
-           <div className="min-h-[120px] md:min-h-[160px] py-3 px-4 bg-white rounded-b relative z-10 shadow text-gray-600">
+           <div className="min-h-[120px] md:min-h-[100px] py-3 px-4 bg-white rounded-b relative z-10 shadow text-gray-600">
              <div className="font-semibold mb-1">
                <p>Chief Financial Officer</p>
-               <p>Email: </p>
+             </div>
+             <div className="flex flex-wrap justify-start gap-5 md:gap-5 py-3">
+               <a
+                 href="https://www.instagram.com/r.wahid_harahap?igsh=MTJwN3BmbnNjdTdsdg=="
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="transition transform hover:scale-110 hover:shadow-lg"
+               >
+                 <img
+                   src={Instagram}
+                   alt="Instagram"
+                   className="w-6 h-6 md:w-6 md:h-6"
+                 />
+               </a>
+               <a
+                 href=""
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 className="transition transform hover:scale-110 hover:shadow-lg"
+               >
+                 <img
+                   src={LinkedIn}
+                   alt="LinkedIn"
+                   className="w-6 h-6 md:w-6 md:h-6"
+                 />
+               </a>
              </div>
              <p className="text-sm text-gray-500">
                Rachmat Wahid menjabat sebagai CFO Rumah BUMN Kalimantan Timur...
@@ -237,6 +380,15 @@ const TentangPage = () => {
                  Rachmat Wahid
                </h4>
                <p className="text-gray-600">Chief Financial Officer (CFO)</p>
+               <p>
+                 Email:{" "}
+                 <a
+                   href="mailto:rachmat.wahid@pertamina.com"
+                   className="text-blue-500"
+                 >
+                   rachmat.wahid@pertamina.com
+                 </a>
+               </p>
                <p className="py-4 text-gray-700">
                  Rachmat Wahid menjabat sebagai CFO Rumah BUMN Kalimantan Timur
                  berdasarkan Surat Keputusan Kementerian Badan Usaha Milik
@@ -250,7 +402,7 @@ const TentangPage = () => {
                  Rachmat Wahid merupakan lulusan Jurusan Akuntansi dari
                  Universitas Trisakti (2010) dan telah melanjutkan pendidikan
                  Magister Management di Universitas Trisakti (2020). Karir
-                 Rachmat Wahid termasuk:
+                 Rachmat Wahid antara lain:
                </p>
                <ul className="list-disc pl-6 text-gray-700">
                  <li className="text-gray-700">
