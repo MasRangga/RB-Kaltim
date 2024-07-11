@@ -129,7 +129,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. 17.000</p>
+                <p className="font-black text-xl">Rp. 16-17.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -191,7 +191,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 18.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -222,7 +222,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 30.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -286,7 +286,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 25.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -317,7 +317,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 13.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -348,7 +348,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 35-150.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -379,7 +379,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 18.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -441,7 +441,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 16.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -472,7 +472,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 20.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -505,7 +505,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 30-35.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -536,7 +536,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 25.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -569,7 +569,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 95.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -600,7 +600,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 20.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -631,7 +631,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 45.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -662,7 +662,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 20-125.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
