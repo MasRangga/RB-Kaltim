@@ -2,6 +2,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import HomePage from "./pages/HomePage"
 import TentangPage from "./pages/TentangPage"
 import InspirasiKarir from "./pages/InspirasiKarir"
+import MagangNot from "./pages/MagangNot"
+import FasilitatorNot from "./pages/FasilitatorNot"
 
 import Balikpapan from "./pages/Balikpapan/Balikpapan"
 import Samarinda from "./pages/Samarinda/Samarinda"
@@ -41,6 +43,8 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/tentangkami" element={<TentangPage />} />
           <Route path="/karir" element={<InspirasiKarir />} />
+          <Route path="/tidakadamagang" element={<MagangNot />} />
+          <Route path="/tidakadalowongan" element={<FasilitatorNot />} />
           <Route path="/balikpapankatalog" element={<Balikpapan />} />
           <Route path="/samarindakatalog" element={<Samarinda />} />
           <Route path="/penajamkatalog" element={<Kukar />} />
