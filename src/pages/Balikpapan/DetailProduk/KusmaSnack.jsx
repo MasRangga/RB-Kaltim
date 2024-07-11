@@ -1,19 +1,20 @@
 import React, { useState } from "react";
 import Navbar from "../../../components/Navbar";
+import CopyRight from "../../../components/CopyRight";
 import { ImWhatsapp } from "react-icons/im";
+import { Link } from "react-router-dom";
+import { MdKeyboardBackspace } from "react-icons/md";
+import KusmaSnack1 from "../../../assets/Balikpapan/KusmaSnack1.jpeg";
 
 const KusmaSnack = () => {
   const [images, setImages] = useState({
-    img1: "https://setc.id/res/images/umkm/Jahe%202.jpg",
-    img2: "https://cdn.ajnn.net/files/images/20221009-img-20221009-wa0003.jpg",
-    img3: "https://awsimages.detik.net.id/visual/2021/09/01/produk-grandvilleabon-salah-satu-umkm-shopee-foto-ist-2_169.jpeg?w=650",
-    img4: "https://setc.id/res/images/umkm/IMG_3022.jpg",
+    img1: KusmaSnack1,
   });
 
   const [activeImg, setActiveImage] = useState(images.img1);
 
   return (
-    <div>
+    <>
       <Navbar />
       <div className="container mx-auto pt-32">
         <div className="flex flex-col gap-10">
@@ -27,6 +28,15 @@ const KusmaSnack = () => {
             </h2>
           </div>
           {/* end judul */}
+          {/* Button Back */}
+          <Link
+            to="/balikpapankatalog"
+            className=" flex items-center gap-2 ml-6 hover:underline hover:scale-105 duration-300 w-1/4"
+          >
+            <MdKeyboardBackspace className="w-6 h-6" />
+            <p className="text-base font-medium">Kembali</p>
+          </Link>
+          {/* End Button Back */}
           <div className="flex flex-col lg:flex-row gap-16 lg:items-center justify-between">
             <div className="flex flex-col gap-6 lg:w-1/2">
               <img
@@ -34,39 +44,35 @@ const KusmaSnack = () => {
                 alt="Main Sneaker"
                 className="w-96 h-80 object-cover rounded-xl mx-auto"
               />
-              <div className="flex justify-center gap-4 h-24">
-                {Object.values(images).map((image, index) => (
-                  <img
-                    key={index}
-                    src={image}
-                    alt={`Thumbnail ${index + 1}`}
-                    className="w-24 h-24 rounded-md cursor-pointer object-cover mx-2"
-                    onClick={() => setActiveImage(image)}
-                  />
-                ))}
-              </div>
             </div>
             {/* ABOUT */}
-            <div className="flex flex-col gap-4 lg:w-1/2">
+            <div className="flex flex-col gap-4 lg:w-1/2 lg:mr-20">
+              {" "}
+              {/* Tambahkan lg:mx-4 untuk tampilan besar dan sm:mx-2 untuk tampilan kecil */}
               <div>
-                <span className="text-primary font-semibold">Paragraf</span>
-                <h1 className="text-3xl font-bold">JUDUL H1</h1>
+                <span className="text-primary font-semibold">Kusuma Snack</span>
+                <h1 className="text-3xl font-bold">Kripik Pisang</h1>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                sunt in culpa qui officia deserunt mollit anim id est laborum.
+                Keripik Pisang Kusuma adalah snack yang rasanya manis, cocok
+                sebagai cemilan sehari-hari atau oleh-oleh. Dibuat dari Pisang
+                pilihan yang dipotong tipis dan dikeringkan dengan proses khusus
+                untuk menjaga tekstur renyahnya.
               </p>
-              <h6 className="text-2xl font-semibold">$199.00</h6>
+              <p className="text-gray-700">
+                <span className="font-semibold">Komposisi : </span> Pisang Raja.
+                Tepung. Gula. Garam Aren.
+              </p>
+              <p className="text-gray-700">
+                <span className="font-semibold">Berat Bersih : </span> 120 gr
+              </p>
+              <h6 className="text-2xl font-semibold">Rp. 25.000</h6>
               <div className="flex flex-row items-center gap-12">
                 <button className="border-2 rounded-3xl py-2 px-4 border-primary bg-white hover:bg-primary group duration-300 lg:py-3 lg:px-6">
                   <a
-                    // href="https://wa.me/6285346901814"
+                    href="https://wa.me/+6285179758586?text=Selamat%20datang%20di%20Rumah%20BUMN%20Balikpapan%2C%20ada%20yang%20bisa%20saya%20bantu%3F"
                     target="_blank"
+                    rel="noopener noreferrer"
                     className="flex items-center gap-1 text-primary group-hover:text-white lg:gap-2 lg:text-xl lg:font-medium"
                   >
                     <ImWhatsapp className="w-5 h-5 lg:w-6 lg:h-6" />
@@ -75,10 +81,12 @@ const KusmaSnack = () => {
                 </button>
               </div>
             </div>
+            {/* End About */}
           </div>
         </div>
       </div>
-    </div>
+      <CopyRight />
+    </>
   );
 };
 
