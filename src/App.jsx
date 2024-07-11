@@ -39,7 +39,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/tentang" element={<TentangPage />} />
+          <Route path="/tentangkami" element={<TentangPage />} />
           <Route path="/karir" element={<InspirasiKarir />} />
           <Route path="/balikpapankatalog" element={<Balikpapan />} />
           <Route path="/samarindakatalog" element={<Samarinda />} />
