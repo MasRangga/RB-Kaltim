@@ -69,7 +69,7 @@ const Balikpapan = () => {
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/mucrovakopi" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -102,7 +102,7 @@ const Balikpapan = () => {
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/kembanggoyang" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -129,11 +129,11 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. 17.000</p>
+                <p className="font-black text-xl">Rp. 16-17.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/pikkong" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -164,7 +164,7 @@ const Balikpapan = () => {
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/papisnack" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -191,11 +191,11 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 18.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/inibrownies" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -222,11 +222,11 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 30.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/jahekoe" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -259,7 +259,7 @@ const Balikpapan = () => {
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/mucrovalatte" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -286,11 +286,11 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 25.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/kusmasnack" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -317,11 +317,11 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 13.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/kriwang" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -348,11 +348,11 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 35-150.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/cookies" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -379,11 +379,11 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 18.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/oshien" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -416,7 +416,7 @@ const Balikpapan = () => {
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/mucrovadrink" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -441,11 +441,11 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 16.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/bananavi" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -472,11 +472,11 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 20.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/stiknaga" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -505,11 +505,11 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 30-35.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/stikbrownies" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -536,11 +536,11 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 25.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/cimikeju" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -560,18 +560,20 @@ const Balikpapan = () => {
               </div>
               {/* Judul */}
               <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">Hasera Kitchen</p>
+                <p className="font-light text-slate-500 text-base">
+                  Hasera Kitchen
+                </p>
                 <p className="font-light text-2xl text-gray-800">
                   Boolena Balikpapan
                 </p>
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 95.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/boolena" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -591,16 +593,18 @@ const Balikpapan = () => {
               </div>
               {/* Judul */}
               <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">Jamune Mba Putri</p>
+                <p className="font-light text-slate-500 text-base">
+                  Jamune Mba Putri
+                </p>
                 <p className="font-light text-2xl text-gray-800">Kunyit Asam</p>
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 20.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/kunyitasam" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -620,16 +624,18 @@ const Balikpapan = () => {
               </div>
               {/* Judul */}
               <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">Bagelen Skripsi</p>
+                <p className="font-light text-slate-500 text-base">
+                  Bagelen Skripsi
+                </p>
                 <p className="font-light text-2xl text-gray-800">Roti Sisir</p>
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 45.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/rotisisir" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>
@@ -650,15 +656,17 @@ const Balikpapan = () => {
               {/* Judul */}
               <div className="mt-3">
                 <p className="font-light text-slate-500 text-base">Nikimie</p>
-                <p className="font-light text-2xl text-gray-800">Black Gartic</p>
+                <p className="font-light text-2xl text-gray-800">
+                  Black Gartic
+                </p>
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. -</p>
+                <p className="font-black text-xl">Rp. 20-125.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
-                <a href="" className="w-full inline-block">
+                <a href="/blackgartic" className="w-full inline-block">
                   <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
                     Lihat Detail
                   </button>

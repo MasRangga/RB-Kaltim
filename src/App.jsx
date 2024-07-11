@@ -9,6 +9,29 @@ import Kukar from "./pages/Kukar/Kukar"
 import Penajam from "./pages/Penajam/Penajam"
 import Berau from "./pages/Berau/Berau"
 
+import MucrovaKopi from "./pages/Balikpapan/DetailProduk/MucrovaKopi"
+import Bananavi from "./pages/Balikpapan/DetailProduk/Bananavi"
+import BlackGartic from "./pages/Balikpapan/DetailProduk/BlackGartic"
+import Boolena from "./pages/Balikpapan/DetailProduk/Boolena"
+import CimiKeju from "./pages/Balikpapan/DetailProduk/CimiKeju"
+import Cookies from "./pages/Balikpapan/DetailProduk/Cookies"
+import IniBrownies from "./pages/Balikpapan/DetailProduk/IniBrownies"
+import JaheKoe from "./pages/Balikpapan/DetailProduk/JaheKoe"
+import KembangGoyang from "./pages/Balikpapan/DetailProduk/KembangGoyang"
+import Kriwang from "./pages/Balikpapan/DetailProduk/Kriwang"
+import KunyitAsam from "./pages/Balikpapan/DetailProduk/KunyitAsam"
+import KusmaSnack from "./pages/Balikpapan/DetailProduk/KusmaSnack"
+import MucrovaDrink from "./pages/Balikpapan/DetailProduk/MucrovaDrink"
+import MucrovaLatte from "./pages/Balikpapan/DetailProduk/MucrovaLatte"
+import Oshien from "./pages/Balikpapan/DetailProduk/Oshien"
+import PapiSnack from "./pages/Balikpapan/DetailProduk/PapiSnack"
+import Pikkong from "./pages/Balikpapan/DetailProduk/Pikkong"
+import RotiSisir from "./pages/Balikpapan/DetailProduk/RotiSisir"
+import StikBrownies from "./pages/Balikpapan/DetailProduk/StikBrownies"
+import StikNaga from "./pages/Balikpapan/DetailProduk/StikNaga"
+
+
+
 function App() {
 
   return (
@@ -23,6 +46,26 @@ function App() {
           <Route path="/penajamkatalog" element={<Kukar />} />
           <Route path="/kukarkatalog" element={<Penajam />} />
           <Route path="/beraukatalog" element={<Berau />} />
+          <Route path="/mucrovakopi" element={<MucrovaKopi />} />
+          <Route path="/bananavi" element={<Bananavi />} />
+          <Route path="/blackgartic" element={<BlackGartic />} />
+          <Route path="/boolena" element={<Boolena />} />
+          <Route path="/cimikeju" element={<CimiKeju />} />
+          <Route path="/cookies" element={<Cookies />} />
+          <Route path="/inibrownies" element={<IniBrownies />} />
+          <Route path="/jahekoe" element={<JaheKoe />} />
+          <Route path="/kembanggoyang" element={<KembangGoyang />} />
+          <Route path="/kriwang" element={<Kriwang />} />
+          <Route path="/kunyitasam" element={<KunyitAsam />} />
+          <Route path="/kusmasnack" element={<KusmaSnack />} />
+          <Route path="/mucrovadrink" element={<MucrovaDrink />} />
+          <Route path="/mucrovalatte" element={<MucrovaLatte />} />
+          <Route path="/oshien" element={<Oshien />} />
+          <Route path="/papisnack" element={<PapiSnack />} />
+          <Route path="/pikkong" element={<Pikkong />} />
+          <Route path="/rotisisir" element={<RotiSisir />} />
+          <Route path="/stikbrownies" element={<StikBrownies />} />
+          <Route path="/stiknaga" element={<StikNaga />} />
         </Routes>
       </Router>
     </>
