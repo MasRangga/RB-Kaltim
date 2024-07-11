@@ -34,7 +34,7 @@ const Navbar = () => {
      },
      {
        name: "Inspirasi Karir",
-       link: "",
+       link: "/karir",
      },
      {
        name: "Berita",
