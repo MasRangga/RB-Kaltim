@@ -30,7 +30,7 @@ const Navbar = () => {
    const Menus = [
      {
        name: "Tentang Kami",
-       link: "",
+       link: "/tentangkami",
      },
      {
        name: "Inspirasi Karir",
@@ -39,7 +39,7 @@ const Navbar = () => {
      {
        name: "Berita",
        link: "",
-     }
+     },
    ];
 
    // logic navbar on scroll to blur background
