@@ -45,6 +45,7 @@ const KembangGoyang = () => {
                 alt="Main Sneaker"
                 className="w-96 h-80 object-cover rounded-xl mx-auto"
               />
+              
             </div>
             {/* ABOUT */}
             <div className="flex flex-col gap-4 lg:w-1/2 lg:mr-20">
