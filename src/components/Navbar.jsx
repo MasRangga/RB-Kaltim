@@ -38,7 +38,7 @@ const Navbar = () => {
      },
      {
        name: "Berita",
-       link: "",
+       link: "/berita",
      },
    ];
 
