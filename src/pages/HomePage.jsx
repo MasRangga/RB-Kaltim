@@ -77,14 +77,14 @@ const HomePage = () => {
    }, [])
 
    const linkRef = useRef(null);
-   // back to MainSection when on click text MovieList in Footer from homepage
-   // const goto = (ref) => {
-   //    window.scrollTo({
-   //       top: ref.offsetTop,
-   //       left: 0,
-   //       behavior: "smooth",
-   //    });
-   // };
+  //  back to MainSection when on click text MovieList in Footer from homepage
+   const goto = (ref) => {
+      window.scrollTo({
+         top: ref.offsetTop,
+         left: 0,
+         behavior: "smooth",
+      });
+   };
 
    return (
      <div>
@@ -119,11 +119,10 @@ const HomePage = () => {
                <div className="flex gap-4 pb-5 lg:mb-36">
                  <button className="border-2 rounded-3xl py-2 px-4 border-primary bg-white hover:bg-primary group duration-300 lg:py-3 lg:px-6">
                    <a
-                     // href="https://wa.me/6285346901814"
+                     href="https://www.instagram.com/rumahbumn.kaltim/"
                      target="_blank"
                      className="flex items-center gap-1 text-primary group-hover:text-white lg:gap-2 lg:text-xl lg:font-medium"
                    >
-                     <ImWhatsapp className="w-5 h-5 lg:w-6 lg:h-6" />
                      <p>Daftar Sekarang</p>
                    </a>
                  </button>
@@ -547,7 +546,7 @@ const HomePage = () => {
          {/* CTA */}
 
          {/* End CTA */}
-         <Footer />
+         <Footer linkRef={linkRef} goto={goto} />
        </div>
      </div>
    );
