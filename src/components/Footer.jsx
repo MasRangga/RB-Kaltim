@@ -71,33 +71,54 @@ const Footer = ({ linkRef, goto }) => {
          <div className="flex flex-col gap-8">
            {/* menu footer */}
            <ul className="flex flex-row gap-4 lg:gap-8">
-             <li className=" hover:text-blue-700 cursor-pointer lg:text-lg">
-               Karir
+             <li className="hover:text-blue-700 cursor-pointer lg:text-lg">
+               <a href="/karir">Karir</a>
              </li>
-             <li className=" hover:text-blue-700 cursor-pointer lg:text-lg">
-               Tentang Kami
+             <li className="hover:text-blue-700 cursor-pointer lg:text-lg">
+               <a href="/tentangkami">Tentang Kami</a>
              </li>
-             <li className=" hover:text-blue-700 cursor-pointer lg:text-lg">
-               Bantuan
+             <li className="hover:text-blue-700 cursor-pointer lg:text-lg">
+               <a
+                 href="https://www.instagram.com/rumahbumn.kaltim/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+               >
+                 Bantuan
+               </a>
              </li>
            </ul>
+
            <div className="h-px w-full bg-slate-600 lg:mb-4"></div>
            {/* hubungi kami */}
            <ul className="flex flex-row gap-5">
              <li>
-               <FaInstagram className="w-6 h-6 text-blue-700 hover:bg-blue-700 hover:rounded-full hover:text-white duration-300 lg:w-8 lg:h-8" />
+               <a
+                 href="https://www.instagram.com/rumahbumn.kaltim/"
+                 target="_blank"
+                 rel="noopener noreferrer"
+               >
+                 <FaInstagram className="w-6 h-6 text-blue-700 hover:bg-blue-700 hover:rounded-full hover:text-white duration-300 lg:w-8 lg:h-8" />
+               </a>
              </li>
              <li>
-               <FaFacebook className="w-6 h-6 text-blue-700 hover:bg-blue-700 hover:rounded-full hover:text-white duration-300 lg:w-8 lg:h-8" />
+               <a target="_blank" rel="noopener noreferrer">
+                 <FaFacebook className="w-6 h-6 text-blue-700 hover:bg-blue-700 hover:rounded-full hover:text-white duration-300 lg:w-8 lg:h-8" />
+               </a>
              </li>
              <li>
-               <BsTwitterX className="w-6 h-6 text-blue-700 hover:bg-blue-700 hover:rounded-full hover:text-white duration-300 lg:w-8 lg:h-8" />
+               <a target="_blank" rel="noopener noreferrer">
+                 <BsTwitterX className="w-6 h-6 text-blue-700 hover:bg-blue-700 hover:rounded-full hover:text-white duration-300 lg:w-8 lg:h-8" />
+               </a>
              </li>
              <li>
-               <FaTiktok className="w-6 h-6 text-blue-700 hover:bg-blue-700 hover:rounded-full hover:text-white duration-300 lg:w-8 lg:h-8" />
+               <a target="_blank" rel="noopener noreferrer">
+                 <FaTiktok className="w-6 h-6 text-blue-700 hover:bg-blue-700 hover:rounded-full hover:text-white duration-300 lg:w-8 lg:h-8" />
+               </a>
              </li>
              <li>
-               <FaWhatsapp className="w-6 h-6 text-blue-700 hover:bg-blue-700 hover:rounded-full hover:text-white duration-300 lg:w-8 lg:h-8" />
+               <a target="_blank" rel="noopener noreferrer">
+                 <FaWhatsapp className="w-6 h-6 text-blue-700 hover:bg-blue-700 hover:rounded-full hover:text-white duration-300 lg:w-8 lg:h-8" />
+               </a>
              </li>
            </ul>
          </div>
