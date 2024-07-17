@@ -208,12 +208,13 @@ const Navbar = () => {
                      Daftar Sekarang
                    </summary>
                    <ul className="p-2 bg-base-100 rounded-t-none">
-                     <Link
-                       as={Link}
-                       to={""}
+                     <a
+                       href="https://bit.ly/FormulirPendaftaranUMKM-RB2024"
                        className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
                        onMouseEnter={() => setHovered(true)}
                        onMouseLeave={() => setHovered(false)}
+                       target="_blank"
+                       rel="noopener noreferrer"
                      >
                        <div
                          className={`avatar ring-primary ring-offset-base-100 w-8 h-8 rounded-full ring ring-offset-2 overflow-hidden flex items-center justify-center bg-white ${
@@ -234,16 +235,16 @@ const Navbar = () => {
                          >
                            RB Balikpapan
                          </p>
-                         <p className={`text-xs text-gray-600`}>instagram</p>
                        </div>
-                     </Link>
+                     </a>
 
-                     <Link
-                       as={Link}
-                       to={""}
+                     <a
+                       href="http://bit.ly/JOINRUMAHBUMNSAMARINDA"
                        className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
                        onMouseEnter={() => setHovered(true)}
                        onMouseLeave={() => setHovered(false)}
+                       target="_blank"
+                       rel="noopener noreferrer"
                      >
                        <div
                          className={`avatar ring-primary ring-offset-base-100 w-8 h-8 rounded-full ring ring-offset-2 overflow-hidden flex items-center justify-center bg-white ${
@@ -264,16 +265,16 @@ const Navbar = () => {
                          >
                            RB Samarinda
                          </p>
-                         <p className={`text-xs text-gray-600`}>instagram</p>
                        </div>
-                     </Link>
+                     </a>
 
-                     <Link
-                       as={Link}
-                       to={""}
+                     <a
+                       href="https://bit.ly/FormRegistrasiRB_Berau"
                        className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
                        onMouseEnter={() => setHovered(true)}
                        onMouseLeave={() => setHovered(false)}
+                       target="_blank"
+                       rel="noopener noreferrer"
                      >
                        <div
                          className={`avatar ring-primary ring-offset-base-100 w-8 h-8 rounded-full ring ring-offset-2 overflow-hidden flex items-center justify-center bg-white ${
@@ -294,16 +295,16 @@ const Navbar = () => {
                          >
                            RB Berau
                          </p>
-                         <p className={`text-xs text-gray-600`}>instagram</p>
                        </div>
-                     </Link>
+                     </a>
 
-                     <Link
-                       as={Link}
-                       to={""}
+                     <a
+                       
                        className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
                        onMouseEnter={() => setHovered(true)}
                        onMouseLeave={() => setHovered(false)}
+                       target="_blank"
+                       rel="noopener noreferrer"
                      >
                        <div
                          className={`avatar ring-primary ring-offset-base-100 w-8 h-8 rounded-full ring ring-offset-2 overflow-hidden flex items-center justify-center bg-white ${
@@ -324,16 +325,16 @@ const Navbar = () => {
                          >
                            RB Penajam Paser Utara
                          </p>
-                         <p className={`text-xs text-gray-600`}>instagram</p>
                        </div>
-                     </Link>
+                     </a>
 
-                     <Link
-                       as={Link}
-                       to={""}
+                     <a
+                       href="https://forms.gle/8XhmK4No735SukyMA"
                        className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
                        onMouseEnter={() => setHovered(true)}
                        onMouseLeave={() => setHovered(false)}
+                       target="_blank"
+                       rel="noopener noreferrer"
                      >
                        <div
                          className={`avatar ring-primary ring-offset-base-100 w-8 h-8 rounded-full ring ring-offset-2 overflow-hidden flex items-center justify-center bg-white ${
@@ -354,9 +355,8 @@ const Navbar = () => {
                          >
                            RB Kutai Kartanegara
                          </p>
-                         <p className={`text-xs text-gray-600`}>instagram</p>
                        </div>
-                     </Link>
+                     </a>
                    </ul>
                  </details>
                </li>
