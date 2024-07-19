@@ -226,24 +226,6 @@ const TentangPage = () => {
                    Hitler Sijabat
                  </h4>
                  <p className="text-gray-600">Chief Executive Officer (CEO)</p>
-                 <p>
-                   Email Pribadi:{" "}
-                   <a
-                     href="mailto:hit.sijabat@gmail.com"
-                     className="text-blue-500"
-                   >
-                     hit.sijabat@gmail.com
-                   </a>
-                 </p>
-                 <p>
-                   Email:{" "}
-                   <a
-                     href="mailto:hitler.sijabat@pertamina.com"
-                     className="text-blue-500"
-                   >
-                     hitler.sijabat@pertamina.com
-                   </a>
-                 </p>
                  <p className="py-4 text-gray-700">
                    Hitler Sijabat menjabat sebagai CEO Rumah BUMN Kalimantan
                    Timur berdasarkan Surat Kementrian Badan Usaha Milik Negara
@@ -379,15 +361,6 @@ const TentangPage = () => {
                  Rachmat Wahid
                </h4>
                <p className="text-gray-600">Chief Financial Officer (CFO)</p>
-               <p>
-                 Email:{" "}
-                 <a
-                   href="mailto:rachmat.wahid@pertamina.com"
-                   className="text-blue-500"
-                 >
-                   rachmat.wahid@pertamina.com
-                 </a>
-               </p>
                <p className="py-4 text-gray-700">
                  Rachmat Wahid menjabat sebagai CFO Rumah BUMN Kalimantan Timur
                  berdasarkan Surat Keputusan Kementerian Badan Usaha Milik
