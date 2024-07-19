@@ -8,7 +8,7 @@ import KripikPare from "../../assets/Balikpapan/KripikPare.jpg";
 import IniBrownies1 from "../../assets/Balikpapan/IniBrownies1.jpg";
 import JaheKoe1 from "../../assets/Balikpapan/JaheKoe1.jpg";
 import KusmaSnack1 from "../../assets/Balikpapan/KusmaSnack1.jpeg";
-import Kriwang from "../../assets/Balikpapan/Kriwang.jpg";
+import Kriwang1 from "../../assets/Balikpapan/Kriwang1.jpg";
 import ZahraCookies from "../../assets/Balikpapan/ZahraCookies.jpg";
 import Oshien1 from "../../assets/Balikpapan/Oshien1.jpg";
 import Bananavi1 from "../../assets/Balikpapan/Bananavi1.jpg";
@@ -129,7 +129,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. 16-17.000</p>
+                <p className="font-black text-xl">Rp. 17.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
@@ -303,8 +303,8 @@ const Balikpapan = () => {
               {/* Gambar Produk */}
               <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
                 <img
-                  src={Kriwang}
-                  alt="Kriwang"
+                  src={Kriwang1}
+                  alt="Kriwang1"
                   className="h-48 w-full object-cover rounded-xl"
                 />
               </div>
@@ -348,7 +348,7 @@ const Balikpapan = () => {
               </div>
               {/* Harga */}
               <div className="mt-3">
-                <p className="font-black text-xl">Rp. 35-150.000</p>
+                <p className="font-black text-xl">Rp. 150.000</p>
               </div>
               {/* Tombol */}
               <div className="mt-3 mb-5">
