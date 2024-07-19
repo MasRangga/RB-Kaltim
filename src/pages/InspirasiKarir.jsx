@@ -332,7 +332,7 @@ const InspirasiKarir = () => {
                       {/* Balikpapan */}
                       <Link
                         as={Link}
-                        to={"/tidakadamagang"}
+                        to={"/tidakadalowongan"}
                         className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
                         onMouseEnter={() => setHovered(true)}
                         onMouseLeave={() => setHovered(false)}
@@ -362,7 +362,7 @@ const InspirasiKarir = () => {
                       {/* Samarinda */}
                       <Link
                         as={Link}
-                        to={"/tidakadamagang"}
+                        to={"/tidakadalowongan"}
                         className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
                         onMouseEnter={() => setHovered(true)}
                         onMouseLeave={() => setHovered(false)}
@@ -392,7 +392,7 @@ const InspirasiKarir = () => {
                       {/* Berau */}
                       <Link
                         as={Link}
-                        to={"/tidakadamagang"}
+                        to={"/tidakadalowongan"}
                         className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
                         onMouseEnter={() => setHovered(true)}
                         onMouseLeave={() => setHovered(false)}
@@ -422,7 +422,7 @@ const InspirasiKarir = () => {
                       {/* PenajamPaser */}
                       <Link
                         as={Link}
-                        to={"/tidakadamagang"}
+                        to={"/tidakadalowongan"}
                         className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
                         onMouseEnter={() => setHovered(true)}
                         onMouseLeave={() => setHovered(false)}
@@ -452,7 +452,7 @@ const InspirasiKarir = () => {
                       {/* Kutai Kartanegara */}
                       <Link
                         as={Link}
-                        to={"/tidakadamagang"}
+                        to={"/tidakadalowongan"}
                         className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
                         onMouseEnter={() => setHovered(true)}
                         onMouseLeave={() => setHovered(false)}
