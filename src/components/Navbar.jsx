@@ -98,7 +98,7 @@ const Navbar = () => {
                          <a>Penajam Paser Utara</a>
                        </li>
                      </Link>
-                     <Link as={Link} to={""}>
+                     <Link as={Link} to={"/kukarkatalog"}>
                        <li>
                          <a>Kutai Kartanegara</a>
                        </li>
@@ -187,7 +187,7 @@ const Navbar = () => {
                            <a>Penajam Paser Utara</a>
                          </li>
                        </Link>
-                       <Link as={Link} to={""}>
+                       <Link as={Link} to={"/kukarkatalog"}>
                          <li>
                            <a>Kutai Kartanegara</a>
                          </li>
