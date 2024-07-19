@@ -177,7 +177,7 @@ const Navbar = () => {
                            <a>Samarinda</a>
                          </li>
                        </Link>
-                       <Link as={Link} to={""}>
+                       <Link as={Link} to={"/beraukatalog"}>
                          <li>
                            <a>Berau</a>
                          </li>
