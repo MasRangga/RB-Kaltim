@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
@@ -12,6 +9,7 @@ export default {
       colors: {
         primary: "#2051E5",
         secondary: "#0065FF",
+        umkm: "#2B9F99",
       },
       backgroundColor: {
         layer: "#84AEFF",
@@ -31,5 +29,5 @@ export default {
     logs: true, // Shows info about daisyUI version and used config in the console when building your CSS
     themeRoot: ":root", // The element that receives theme color CSS variables
   },
-}
+};
 
