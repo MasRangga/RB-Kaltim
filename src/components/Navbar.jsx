@@ -83,17 +83,17 @@ const Navbar = () => {
                          <a>Balikpapan</a>
                        </li>
                      </Link>
-                     <Link as={Link} to={""}>
+                     <Link as={Link} to={"/samarindakatalog"}>
                        <li>
                          <a>Samarinda</a>
                        </li>
                      </Link>
-                     <Link as={Link} to={""}>
+                     <Link as={Link} to={"/beraukatalog"}>
                        <li>
                          <a>Berau</a>
                        </li>
                      </Link>
-                     <Link as={Link} to={""}>
+                     <Link as={Link} to={"/penajamkatalog"}>
                        <li>
                          <a>Penajam Paser Utara</a>
                        </li>
