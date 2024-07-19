@@ -64,8 +64,8 @@ function App() {
           <Route path="/tidakadalowongan" element={<FasilitatorNot />} />
           <Route path="/balikpapankatalog" element={<Balikpapan />} />
           <Route path="/samarindakatalog" element={<Samarinda />} />
-          <Route path="/penajamkatalog" element={<Kukar />} />
-          <Route path="/kukarkatalog" element={<Penajam />} />
+          <Route path="/kukarkatalog" element={<Kukar />} />
+          <Route path="/penajamkatalog" element={<Penajam />} />
           <Route path="/beraukatalog" element={<Berau />} />
 
           {/* BalikpapanKatalog */}
