@@ -38,6 +38,14 @@ import Berita1Juli from "./pages/BeritaDetail/Berita1Juli"
 import Berita15Mei from "./pages/BeritaDetail/Berita15Mei"
 import Berita1Maret from "./pages/BeritaDetail/Berita1Maret"
 
+import TehBawangDayak from "./pages/Samarinda/DetailProduk/TehBawangDayak"
+import TehDaunSalam from "./pages/Samarinda/DetailProduk/TehDaunSalam"
+import TehJaheMerah from "./pages/Samarinda/DetailProduk/TehJaheMerah"
+import TehRempahKemangi from "./pages/Samarinda/DetailProduk/TehRempahKemangi"
+import TehRosella from "./pages/Samarinda/DetailProduk/TehRosella"
+
+
+
 function App() {
 
   return (
@@ -59,6 +67,8 @@ function App() {
           <Route path="/penajamkatalog" element={<Kukar />} />
           <Route path="/kukarkatalog" element={<Penajam />} />
           <Route path="/beraukatalog" element={<Berau />} />
+
+          {/* BalikpapanKatalog */}
           <Route path="/mucrovakopi" element={<MucrovaKopi />} />
           <Route path="/bananavi" element={<Bananavi />} />
           <Route path="/blackgartic" element={<BlackGartic />} />
@@ -79,6 +89,13 @@ function App() {
           <Route path="/rotisisir" element={<RotiSisir />} />
           <Route path="/stikbrownies" element={<StikBrownies />} />
           <Route path="/stiknaga" element={<StikNaga />} />
+
+          {/* SamarindaKatalog */}
+          <Route path="/tehbawangdayak" element={<TehBawangDayak />} />
+          <Route path="/tehdaunsalam" element={<TehDaunSalam />} />
+          <Route path="/tehjahemerah" element={<TehJaheMerah />} />
+          <Route path="/tehrempahkemangi" element={<TehRempahKemangi />} />
+          <Route path="/tehrosella" element={<TehRosella />} />
         </Routes>
       </Router>
     </>
