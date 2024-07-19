@@ -137,11 +137,10 @@ const TentangPage = () => {
          data-aos-duration="800"
        >
          <h2 className="text-blue-900 font-bold text-2xl lg:text-4xl">
-           CEO & CFO
+           Struktur Perusahaan
          </h2>
          <p className="text-lg md:text-xl font-medium text-gray-400">
-           Chief Executive Officer & Chief Financial Officer Rumah BUMN
-           Kalimantan Timur
+           Struktur Perusahaan di Rumah BUMN Kalimantan Timur
          </p>
        </div>
        <div className="flex flex-col md:flex-row justify-center">
@@ -335,7 +334,7 @@ const TentangPage = () => {
                  />
                </a>
                <a
-                 href=""
+                 href="https://www.linkedin.com/in/rumah-bumn-balikpapan-38670a305/"
                  target="_blank"
                  rel="noopener noreferrer"
                  className="transition transform hover:scale-110 hover:shadow-lg"
@@ -453,12 +452,6 @@ const TentangPage = () => {
          data-aos-offset="320"
          data-aos-duration="800"
        >
-         <h2 className="text-blue-900 font-bold text-2xl lg:text-4xl">
-           Struktur Perusahaan
-         </h2>
-         <p className="text-lg md:text-xl font-medium text-gray-400">
-           Struktur Perusahaan di Rumah BUMN Kalimantan Timur
-         </p>
          <div className="flex justify-center my-10" data-aos="fade-up">
            <img
              src={StrukturPerusahaan2}
