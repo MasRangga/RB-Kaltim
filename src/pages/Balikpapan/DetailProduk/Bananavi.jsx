@@ -52,23 +52,21 @@ const Bananavi = () => {
                 <h1 className="text-3xl font-bold">Bananavi</h1>
               </div>
               <p className="text-gray-700 leading-relaxed">
-                Keripik pisang Oshien terbuat dari bahan pisang pilihan. Keripik
-                pisang Oshien dikemas dalam wadah standing pouch yang kekinian
-                dan cantik, sehingga membuat keripik pisang Oshien tidak mudah
-                melempem dan tahan lama.
+                Keripik pisang yang terbuat dari pisang tanduk dan keripik
+                pisang kepok. Garing dan renyah sekali.
               </p>
               <p className="text-gray-700">
                 {" "}
-                <span className="font-semibold">Komposisi : </span> Keripik
-                Pisang Asin: Pisang (tanduk atau kepok), minyak goreng, garam,
-                air. <br /> Keripik Pisang Manis: Pisang (tanduk atau kepok),
-                minyak goreng, madu, gula pasir, garam, air.
+                <span className="font-semibold">Komposisi : </span> Pisang
+                Tanduk, Pisang Kepok, Gula, Madu, Bawang Putih, Garam, Coklat,
+                Tiramisu, Lombok.
               </p>
               <p className="text-gray-700">
                 {" "}
-                <span className="font-semibold">Berat Bersih : </span> 100 gr
+                <span className="font-semibold">Berat Bersih : </span> 100 gr,
+                150 gr, 250 gr, dan 500 gr
               </p>
-              <h6 className="text-2xl font-semibold">Rp. 18.000</h6>
+              <h6 className="text-2xl font-semibold">Rp. 10-50.000</h6>
               <div className="flex flex-row items-center gap-12">
                 <button className="border-2 rounded-3xl py-2 px-4 border-primary bg-white hover:bg-primary group duration-300 lg:py-3 lg:px-6">
                   <a
