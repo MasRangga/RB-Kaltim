@@ -34,8 +34,9 @@ import StikBrownies from "./pages/Balikpapan/DetailProduk/StikBrownies"
 import StikNaga from "./pages/Balikpapan/DetailProduk/StikNaga"
 
 import Berita11Juni from "./pages/BeritaDetail/Berita11Juni"
-
-
+import Berita1Juli from "./pages/BeritaDetail/Berita1Juli"
+import Berita15Mei from "./pages/BeritaDetail/Berita15Mei"
+import Berita1Maret from "./pages/BeritaDetail/Berita1Maret"
 
 function App() {
 
@@ -48,6 +49,9 @@ function App() {
           <Route path="/karir" element={<InspirasiKarir />} />
           <Route path="/berita" element={<Berita />} />
           <Route path="/berita:11Juni" element={<Berita11Juni />} />
+          <Route path="/berita:1Juli" element={<Berita1Juli />} />
+          <Route path="/berita:15Mei" element={<Berita15Mei />} />
+          <Route path="/berita:1Maret" element={<Berita1Maret />} />
           <Route path="/tidakadamagang" element={<MagangNot />} />
           <Route path="/tidakadalowongan" element={<FasilitatorNot />} />
           <Route path="/balikpapankatalog" element={<Balikpapan />} />
