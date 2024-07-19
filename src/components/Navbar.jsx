@@ -172,7 +172,7 @@ const Navbar = () => {
                            <a>Balikpapan</a>
                          </li>
                        </Link>
-                       <Link as={Link} to={""}>
+                       <Link as={Link} to={"/samarindakatalog"}>
                          <li>
                            <a>Samarinda</a>
                          </li>
