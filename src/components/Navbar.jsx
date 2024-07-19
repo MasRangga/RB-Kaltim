@@ -299,7 +299,7 @@ const Navbar = () => {
                      </a>
 
                      <a
-                       
+                       href="https://forms.gle/xjQxC24opACs3LrB6"
                        className="flex items-center space-x-4 p-2 rounded-md hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105"
                        onMouseEnter={() => setHovered(true)}
                        onMouseLeave={() => setHovered(false)}
