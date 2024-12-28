@@ -40,7 +40,7 @@ const TentangPage = () => {
        <Navbar scrollToTop={scrollTo} />
        <div className="container pt-18 md:pt-20 lg:pt-32 mx-auto" ref={linkRef}>
          <div className="flex flex-col md:flex-row lg:justify-between mx-6">
-           <div className="flex flex-col mt-20 lg:w-1/2">
+           <div className="flex flex-col mt-20 lg:mt-5 lg:w-1/2">
              <div
                data-aos="fade-right"
                data-aos-offset="320"
@@ -76,7 +76,7 @@ const TentangPage = () => {
            </div>
            <img
              data-aos="fade-left"
-             className="mt-2 mx-2 md:mt-8 md:w-1/2 lg:w-[600px]"
+             className="mt-2 mx-2 md:mt-36 md:mr-16 md:w-1/2 lg:w-[600px]"
              src={HeroAbout}
              alt="HeroAbout"
            />
