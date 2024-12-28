@@ -1,6 +1,8 @@
-import React from 'react'
-import Navbar from '../../components/Navbar';
+import React from "react";
+import Navbar from "../../components/Navbar";
+import CopyRight from "../../components/CopyRight";
 
+// Importing images
 import Produk1 from "../../assets/Balikpapan/Produk1.jpg";
 import KembangGoyang1 from "../../assets/Balikpapan/KembangGoyang1.jpg";
 import Pikkong1 from "../../assets/Balikpapan/Pikkong1.jpg";
@@ -20,8 +22,169 @@ import Chacaos from "../../assets/Balikpapan/Chacaos.jpeg";
 import Bagelan from "../../assets/Balikpapan/Bagelan.jpg";
 import BlackGartic1 from "../../assets/Balikpapan/BlackGartic1.png";
 
-
-import CopyRight from '../../components/CopyRight';
+// Product data array
+const products = [
+  {
+    id: 1,
+    name: "Mangrove Original",
+    description: "Mucrova Kopi",
+    price: "Rp. 35.000",
+    image: Produk1,
+    link: "/mucrovakopi",
+  },
+  {
+    id: 2,
+    name: "Kembang Goyang",
+    description: "Linda Zizha",
+    price: "Rp. 17.000",
+    image: KembangGoyang1,
+    link: "/kembanggoyang",
+  },
+  {
+    id: 3,
+    name: "Keripik Singkong Pedas",
+    description: "Pikkong",
+    price: "Rp. 17.000",
+    image: Pikkong1,
+    link: "/pikkong",
+  },
+  {
+    id: 4,
+    name: "Kripik Pare",
+    description: "Papi Snack",
+    price: "Rp. 25.000",
+    image: KripikPare,
+    link: "/papisnack",
+  },
+  {
+    id: 5,
+    name: "IniBrownise",
+    description: "RirTri Kueku",
+    price: "Rp. 18.000",
+    image: IniBrownies1,
+    link: "/inibrownies",
+  },
+  {
+    id: 6,
+    name: "Jahe Koe",
+    description: "Imroatun Norah",
+    price: "Rp. 30.000",
+    image: JaheKoe1,
+    link: "/jahekoe",
+  },
+  {
+    id: 7,
+    name: "Mangrove Latte",
+    description: "Mucrova Kopi",
+    price: "Rp. 35.000",
+    image: Produk1,
+    link: "/mucrovalatte",
+  },
+  {
+    id: 8,
+    name: "Kripik Pisang",
+    description: "Kusuma Snack",
+    price: "Rp. 25.000",
+    image: KusmaSnack1,
+    link: "/kusmasnack",
+  },
+  {
+    id: 9,
+    name: "Kriwang",
+    description: "Edrusya Snack",
+    price: "Rp. 13.000",
+    image: Kriwang1,
+    link: "/kriwang",
+  },
+  {
+    id: 10,
+    name: "Cookies",
+    description: "Zahra Cookies",
+    price: "Rp. 150.000",
+    image: ZahraCookies,
+    link: "/cookies",
+  },
+  {
+    id: 11,
+    name: "Oshien",
+    description: "Sien Pongoh",
+    price: "Rp. 18.000",
+    image: Oshien1,
+    link: "/oshien",
+  },
+  {
+    id: 12,
+    name: "Mangrove Drink",
+    description: "Mucrova Kopi",
+    price: "Rp. 12.000",
+    image: Produk1,
+    link: "/mucrovadrink",
+  },
+  {
+    id: 13,
+    name: "Bananavi",
+    description: "DadoSatro",
+    price: "Rp. 16.000",
+    image: Bananavi1,
+    link: "/bananavi",
+  },
+  {
+    id: 14,
+    name: "Stik Buah Naga",
+    description: "Yenny Chulaila",
+    price: "Rp. 20.000",
+    image: StikNaga1,
+    link: "/stiknaga",
+  },
+  {
+    id: 15,
+    name: "Stik Brownies",
+    description: "Chacaos Id Magrove",
+    price: "Rp. 35.000",
+    image: Chacaos,
+    link: "/stikbrownies",
+  },
+  {
+    id: 16,
+    name: "Cimi Keju",
+    description: "Thalita Bakery",
+    price: "Rp. 25.000",
+    image: CimiKeju1,
+    link: "/cimikeju",
+  },
+  {
+    id: 17,
+    name: "Boolena Balikpapan",
+    description: "Hasera Kitchen",
+    price: "Rp. 95.000",
+    image: Boolena1,
+    link: "/boolena",
+  },
+  {
+    id: 18,
+    name: "Kunyit Asam",
+    description: "Jamune Mba Putri",
+    price: "Rp. 20.000",
+    image: Jamune,
+    link: "/kunyitasam",
+  },
+  {
+    id: 19,
+    name: "Roti Sisir",
+    description: "Bagelen Skripsi",
+    price: "Rp. 45.000",
+    image: Bagelan,
+    link: "/rotisisir",
+  },
+  {
+    id: 20,
+    name: "Black Gartic",
+    description: "Nikimie",
+    price: "Rp. 125.000",
+    image: BlackGartic1,
+    link: "/blackgartic",
+  },
+];
 
 const Balikpapan = () => {
   return (
@@ -42,637 +205,45 @@ const Balikpapan = () => {
             </p>
           </div>
           {/* end judul */}
+
           {/* Produk */}
           <div className="mt-4 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 mx-5">
-            {/* Produk1 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={Produk1}
-                  alt="produk1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Mucrova Kopi
-                </p>
-                <p className="font-light text-2xl text-gray-800">
-                  Mangrove Original
-                </p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 35.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/mucrovakopi" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk2 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={KembangGoyang1}
-                  alt="produk1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Linda Zizha
-                </p>
-                <p className="font-light text-2xl text-gray-800">
-                  Kembang Goyang
-                </p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 17.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/kembanggoyang" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk3 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={Pikkong1}
-                  alt="produk1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">Pikkong</p>
-                <p className="font-light text-2xl text-gray-800">
-                  Keripik Singkong Pedas
-                </p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 17.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/pikkong" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk4 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={KripikPare}
-                  alt="produk1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Papi Snack
-                </p>
-                <p className="font-light text-2xl text-gray-800">Kripik Pare</p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 25.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/papisnack" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk5 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={IniBrownies1}
-                  alt="produk1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  RirTri Kueku
-                </p>
-                <p className="font-light text-2xl text-gray-800">IniBrownise</p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 18.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/inibrownies" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk6 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={JaheKoe1}
-                  alt="produk1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Imroatun Norah
-                </p>
-                <p className="font-light text-2xl text-gray-800">Jahe Koe</p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 30.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/jahekoe" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk7 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={Produk1}
-                  alt="produk1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Mucrova Kopi
-                </p>
-                <p className="font-light text-2xl text-gray-800">
-                  Mangrove Latte
-                </p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 35.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/mucrovalatte" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk8 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={KusmaSnack1}
-                  alt="KusmaSnack1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Kusuma Snack
-                </p>
-                <p className="font-light text-2xl text-gray-800">Kripik Pisang</p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 25.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/kusmasnack" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk1 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={Kriwang1}
-                  alt="Kriwang1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Edrusya Snack
-                </p>
-                <p className="font-light text-2xl text-gray-800">Kriwang</p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 13.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/kriwang" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk1 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={ZahraCookies}
-                  alt="ZahraCookies"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Zahra Cookies
-                </p>
-                <p className="font-light text-2xl text-gray-800">Cookies</p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 150.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/cookies" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk1 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={Oshien1}
-                  alt="Oshien1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Sien Pongoh
-                </p>
-                <p className="font-light text-2xl text-gray-800">Oshien</p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 18.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/oshien" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk1 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={Produk1}
-                  alt="produk1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Mucrova Kopi
-                </p>
-                <p className="font-light text-2xl text-gray-800">
-                  Mangrove Drink
-                </p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 12.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/mucrovadrink" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk1 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={Bananavi1}
-                  alt="Bananavi1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">DadoSatro</p>
-                <p className="font-light text-2xl text-gray-800">Bananavi</p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 16.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/bananavi" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk1 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={StikNaga1}
-                  alt="StikNaga1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Yenny Chulaila
-                </p>
-                <p className="font-light text-2xl text-gray-800">Stik Buah Naga</p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 20.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/stiknaga" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk1 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={Chacaos}
-                  alt="Chacaos"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Chacaos Id Magrove
-                </p>
-                <p className="font-light text-2xl text-gray-800">
-                  Stik Brownies
-                </p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 35.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/stikbrownies" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk1 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={CimiKeju1}
-                  alt="CimiKeju1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Thalita Bakery
-                </p>
-                <p className="font-light text-2xl text-gray-800">Cimi Keju</p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 25.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/cimikeju" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk1 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={Boolena1}
-                  alt="Boolena1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Hasera Kitchen
-                </p>
-                <p className="font-light text-2xl text-gray-800">
-                  Boolena Balikpapan
-                </p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 95.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/boolena" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk1 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={Jamune}
-                  alt="Jamune"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Jamune Mba Putri
-                </p>
-                <p className="font-light text-2xl text-gray-800">Kunyit Asam</p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 20.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/kunyitasam" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk1 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={Bagelan}
-                  alt="Bagelan"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">
-                  Bagelen Skripsi
-                </p>
-                <p className="font-light text-2xl text-gray-800">Roti Sisir</p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 45.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/rotisisir" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
-
-            {/* Produk1 */}
-            <div className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm">
-              {/* Gambar Produk */}
-              <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
-                <img
-                  src={BlackGartic1}
-                  alt="BlackGartic1"
-                  className="h-48 w-full object-cover rounded-xl"
-                />
-              </div>
-              {/* Judul */}
-              <div className="mt-3">
-                <p className="font-light text-slate-500 text-base">Nikimie</p>
-                <p className="font-light text-2xl text-gray-800">
-                  Black Gartic
-                </p>
-              </div>
-              {/* Harga */}
-              <div className="mt-3">
-                <p className="font-black text-xl">Rp. 125.000</p>
-              </div>
-              {/* Tombol */}
-              <div className="mt-3 mb-5">
-                <a href="/blackgartic" className="w-full inline-block">
-                  <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
-                    Lihat Detail
-                  </button>
-                </a>
-              </div>
-            </div>
+            {products.map((product) => (
+              <div
+                key={product.id}
+                className="border border-gray-400 p-4 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 max-w-sm"
+              >
+                {/* Gambar Produk */}
+                <div className="bg-slate-200 p-4 flex justify-center rounded-2xl">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="h-48 w-full object-cover rounded-xl"
+                  />
+                </div>
+                {/* Judul */}
+                <div className="mt-3">
+                  <p className="font-light text-slate-500 text-base">
+                    {product.description}
+                  </p>
+                  <p className="font-light text-2xl text-gray-800">
+                    {product.name}
+                  </p>
+                </div>
+                {/* Harga */}
+                <div className="mt-3">
+                  <p className="font-black text-xl">{product.price}</p>
+                </div>
+                {/* Tombol */}
+                <div className="mt-3 mb-5">
+                  <a href={product.link} className="w-full inline-block">
+                    <button className="w-full bg-blue-500 text-white py-2 px-4 rounded-xl hover:bg-blue-600 transition-colors duration-300">
+                      Lihat Detail
+                    </button>
+                  </a>
+                </div>
+              </div>
+            ))}
           </div>
           {/* end produk */}
           <CopyRight />
@@ -680,6 +251,6 @@ const Balikpapan = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Balikpapan
+export default Balikpapan;

@@ -30,11 +30,11 @@ const Berita15Mei = () => {
         {/* End Button Back */}
         <article className="flex-1">
           <div className="text-center">
-            <h1 className="text-4xl font-bold mt-4 text-slate-900">
+            <h1 className="text-xl md:text-3xl font-bold mt-4 text-slate-900">
               Dukung UMKM Naik Kelas, Rumah BUMN Balikpapan Gelar Sosialisasi
               Pengembangan Usaha
             </h1>
-            <p className="text-gray-500 text-xl font-semibold my-5">
+            <p className="text-gray-500 text-lg md:text-xl font-semibold my-5">
               15 Mei 2024
             </p>
           </div>
